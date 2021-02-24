@@ -74,13 +74,18 @@ article:before {
 	background: red;
 }
 
+
+/*TITULO POEMA*/
 article h2 {
+	
 	margin-top: 10px;
 	font-weight: 100;
 	font-size: 25px;
 }
 
+/*TEXTO DEL POEMA*/
 article p {
+	text-align: justify;
 	margin-top: 20px;
 	font-size: 18px;
 	color: #3C3C3C;
