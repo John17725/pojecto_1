@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/styles_menu.css">
 	<link rel="stylesheet" href="styles/styles_index.css">
+	<link rel="stylesheet" href="">
 	<script src="https://kit.fontawesome.com/a0f9c20aeb.js" crossorigin="anonymous"></script>
 	<title>Inicio</title>
 </head>
@@ -40,44 +41,33 @@
 				</div>
 			</div>
 		</section>
-		<section class="article-content">
-			<div class="container-content">
-				<article>
-					<h2>TITULO POEMA</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores blanditiis ipsa rerum minima quod repellat sit voluptatibus dolores, in quasi officia fugit. Magni pariatur neque necessitatibus deserunt minus dicta repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione consectetur voluptatibus cumque. Voluptas, veritatis fugiat dicta ipsum, quod iusto itaque beatae. Excepturi repellendus deleniti laboriosam mollitia error doloremque. Consequatur.</p>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab a doloribus laboriosam, harum asperiores quis. Quasi, quia non esse maiores nostrum itaque ducimus sapiente totam ex tenetur, expedita unde deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur velit sit consectetur facere vitae et. Cum consequuntur, sequi quia, doloribus facere et magnam ducimus nulla, temporibus dolores, reprehenderit. Labore, nemo.</p>
-					<br>
-					<br>
-					<a href="#" class="btn-enviar-1"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-					<a href="#" class="btn-enviar-2"><i class="fas fa-at"></i> Email</a>
-				</article>
+		<section>
+			<div class="grid-container">
+				<img class="grid-item" src="https://picsum.photos/230/188.jpg" width="230" height="188"/>
+				<img class="grid-item" src="https://picsum.photos/230/220.jpg" width="230" height="220"/>
+				<img class="grid-item" src="https://picsum.photos/230/265.jpg" width="230" height="265"/>
+				<img class="grid-item" src="https://picsum.photos/230/654.jpg" width="230" height="654"/>
+				<img class="grid-item" src="https://picsum.photos/230/561.jpg" width="230" height="561"/>
+				<img class="grid-item" src="https://picsum.photos/230/490.jpg" width="230" height="490"/>
+				<img class="grid-item" src="https://picsum.photos/230/389.jpg" width="230" height="389"/>
+				<img class="grid-item" src="https://picsum.photos/230/350.jpg" width="230" height="350"/>
+				<img class="grid-item" src="https://picsum.photos/230/289.jpg" width="230" height="289"/>
+				<img class="grid-item" src="https://picsum.photos/230/120.jpg" width="230" height="120"/>
+				<img class="grid-item" src="https://picsum.photos/230/90.jpg" width="230" height="90"/>
+				<img class="grid-item" src="https://picsum.photos/230/320.jpg" width="230" height="320"/>
 			</div>
-		</section>
-		<section class="article-content">
-			<div class="container-content">
-				<article>
-					<h2>TITULO POEMA</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores blanditiis ipsa rerum minima quod repellat sit voluptatibus dolores, in quasi officia fugit. Magni pariatur neque necessitatibus deserunt minus dicta repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione consectetur voluptatibus cumque. Voluptas, veritatis fugiat dicta ipsum, quod iusto itaque beatae. Excepturi repellendus deleniti laboriosam mollitia error doloremque. Consequatur.</p>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab a doloribus laboriosam, harum asperiores quis. Quasi, quia non esse maiores nostrum itaque ducimus sapiente totam ex tenetur, expedita unde deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur velit sit consectetur facere vitae et. Cum consequuntur, sequi quia, doloribus facere et magnam ducimus nulla, temporibus dolores, reprehenderit. Labore, nemo.</p>
-					<br>
-					<br>
-					<a href="#" class="btn-enviar-1"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-					<a href="#" class="btn-enviar-2"><i class="fas fa-at"></i> Email</a>
-				</article>
-			</div>
-		</section>
-		<section class="article-content">
-			<div class="container-content">
-				<article>
-					<h2>TITULO POEMA</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores blanditiis ipsa rerum minima quod repellat sit voluptatibus dolores, in quasi officia fugit. Magni pariatur neque necessitatibus deserunt minus dicta repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione consectetur voluptatibus cumque. Voluptas, veritatis fugiat dicta ipsum, quod iusto itaque beatae. Excepturi repellendus deleniti laboriosam mollitia error doloremque. Consequatur.</p>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab a doloribus laboriosam, harum asperiores quis. Quasi, quia non esse maiores nostrum itaque ducimus sapiente totam ex tenetur, expedita unde deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur velit sit consectetur facere vitae et. Cum consequuntur, sequi quia, doloribus facere et magnam ducimus nulla, temporibus dolores, reprehenderit. Labore, nemo.</p>
-					<br>
-					<br>
-					<a href="#" class="btn-enviar-1"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-					<a href="#" class="btn-enviar-2"><i class="fas fa-at"></i> Email</a>
-				</article>
-			</div>
+			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+			<script>
+				var elem = document.querySelector('.grid-container');
+				var msnry = new Masonry( elem, {
+				  // options
+				  itemSelector: '.grid-item',
+				  columnWidth: 230,
+				  gutter: 20,
+				  isFitWidth: true
+				});
+			</script>
+
 		</section>
 		<section>
 			<div class="icons">
